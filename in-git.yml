@@ -1,0 +1,12 @@
+---
+
+- name: install git
+  hosts: all
+  become: true
+
+- tasks: 
+  name: update machine
+  shell: sudo apt update
+
+- name: install git
+  shell: sudo apt install git
