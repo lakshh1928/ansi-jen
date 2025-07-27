@@ -1,7 +1,7 @@
 ---
 
 - name: install Docker
-  hosts: all
+  hosts: virtual
   become: true
 
   tasks: 
