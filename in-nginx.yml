@@ -1,0 +1,12 @@
+---
+- name: Install nginx
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Update machine
+      shell: sudo apt update
+
+    - name: Install Nginx
+      shell: sudo apt install -y nginx
+
